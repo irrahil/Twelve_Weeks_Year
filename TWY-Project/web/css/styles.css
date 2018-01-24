@@ -1,0 +1,106 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 20.10.2016, 11:22:51
+    Author     : irit
+*/
+
+body {
+    background-color: #ccedff;
+}
+
+.main_menu {
+    background-color: darkorange;
+    text-align: center;
+    width: 12.5%;
+    border-radius: 15px;
+}
+.main_menu button {
+    background-color: darkcyan;
+    text-align: center;
+    width: 100%;
+    color: greenyellow;
+    font-weight: bold;
+    font-family: 'monospace';
+    border: darkcyan;
+    border-collapse: collapse;
+    border-radius: 15px;
+}
+
+.task_page {
+    vertical-align: top;
+}
+.journal_page {
+
+}
+.time_page {
+
+}
+
+.task_page_panel,
+.journal_page_panel,
+.time_page_panel{
+    vertical-align: top;
+    border-radius: 15px;
+    padding-top: 25px;
+    width: 220px;
+    text-align: center;
+    padding-bottom: 25px;
+    font-weight: bold;
+    font-family: 'monospace';
+}
+.task_page_panel button,
+.journal_page_panel button,
+.time_page_panel button{
+    width: 210px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: darkcyan;
+    font-weight: bold;
+    font-family: 'monospace';
+}
+
+.task_page_panel {
+    background-color: #99b764;
+}
+.journal_page_panel {
+    background-color: #c6b764;
+}
+.time_page_panel {
+    background-color: #1cb764;
+}
+
+.task_page_head {
+    background-color: goldenrod;
+}
+
+.task_page_body {
+    background-color: #dff2ff;
+    padding: 5px 10px 10px 15px;
+    border: 1px solid black;
+}
+
+.task_page_body tr {
+    border: 1px solid black;
+}
+
+.task_page_body tr:first-child {
+    background-color: silver;
+
+}
+
+.task_page_body tr:nth-child(even) {
+    background-color: lightgrey;
+}
+.journal_body_tr {
+    height: 10px;
+    background-color: brown;
+    border-radius: 3px;
+}
+
+#journal {
+    width: 100%;
+}

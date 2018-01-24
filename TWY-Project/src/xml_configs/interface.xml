@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<interface>
+    <globals>
+        <title value="Тестовый сервлет для TWY"></title>
+        <ajax_path value="/TWY/js/ajax.js"></ajax_path>
+        <ABOUT>
+            Страница описания системы.
+            Система предназначена для работы с задачами и целями по принципу "12 недель в году"
+        </ABOUT>
+        <MAIN>
+            <pre>
+                Система управления целями Twelwe Weeks to Year (TWY);
+            
+                Разработана by Irit (c) 2016
+            </pre>
+        </MAIN>
+    </globals>
+    
+    <menu count="4">
+        <mainMenu num="1">
+            <button name="aboutPage" value="О системе"></button>
+            <button name="mainPage" value="Главная"></button>
+            <button name="taskPage" value="Управление целями"></button>
+            <button name="journalPage" value="Журнал успехов"></button>
+            <button name="timePage" value="Учет времени"></button>
+            <button name="adminPage" value="Администрирование"></button>
+            <button name="loginPage" value="Войти"></button>
+            <button name="regPage" value="Регистрация"></button>
+            <button name="exitPage" value="Выйти"></button>
+        </mainMenu>
+        <taskMenu num="2">
+            <button name="newYear" value="Создать новый год"></button>
+            <button name="makeNewTask" value="Создать новую задачу"></button>
+        </taskMenu>
+        <journalMenu num="3">
+            
+        </journalMenu>
+        <adminMenu num="4">
+            
+        </adminMenu>
+    </menu>
+    
+    <forms>
+        <form name="Login" width="300" height="100" method="post">
+            <field type="hidden" name="cmd" value="login"></field>
+            <field type="text" name="login" comment="Логин"></field>
+            <field type="password" name="pass" comment="Пароль"></field>
+            <field type="submit" value="Войти"></field>
+            </form>
+        <form name="Reg" width="300" height="200" method="post">
+            <field type="hidden" name="cmd" value="registry"></field>
+            <field type="text" name="family" comment="Фамилия"></field>
+            <field type="text" name="name" comment="Имя"></field>
+            <field type="password" name="password" comment="Пароль"></field>
+            <field type="password" name="password2" comment="Повторите пароль"></field>
+            <field type="text" name="email" comment="Адрес электронной почты"></field>
+            <field type="submit" value="Зарегистрироваться"></field>
+        </form>
+        <form name="Exit" width="100" height="50" method="post">
+            <field type="hidden" name="cmd" value="exit"></field>
+            <field type="submit" value="Нажмите для выхода"></field>
+        </form>
+        <form name="NewYear" width="100" height="120" method="post">
+            <field type="hidden" name="cmd" value="new_year"></field>
+            <field type="date" name="begin_date" comment="Начальная дата"></field>
+            <field type="text" name="purpose_1" comment="Первая цель года"></field>
+            <field type="text" name="purpose_2" comment="Вторая цель года"></field>
+            <field type="text" name="purpose_3" comment="Третья цель года"></field>
+            <field type="submit" value="Создать новый год"></field>
+        </form>
+    </forms>
+</interface>
